@@ -3,7 +3,7 @@ function country() {
   let searching = document.querySelector("#search-input");
   //alert(searching.value);
   let city = searching.value;
-  let apiKey = "77bdfc047f054f23dabe6bdof740t2a3";
+  let sheCode = "77bdfc047f054f23dabe6bdof740t2a3";
   let urlApi = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
   axios.get(urlApi).then(weather);
